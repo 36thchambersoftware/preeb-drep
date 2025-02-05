@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "PREEB",
+    "motivations": "The people should always matter most. Fairness, accessibility and safety are my motivations behind why I'm choosing to be a dRep. I will always put people first, which will be default make Cardano the best blockchain.",
+    "objectives": "* Maintain decentralization\n* Redefine how we reward people who contribute to Cardano\n* Ensure the health and safety of the humans that make up Cardano\n* Ensure that the community's best interest are the focus before profit",
+    "paymentAddress": "addr1qy2hmljzhhlfnp3f93kypxe9s6zrk48u0eussgrt8pqyev7nrcqyctls0tfffny9cq7lfl0mmwnhrk2gk850dj4ad40sjru9fh",
+    "qualifications": "I am an SPO and developer for years now. ",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Discord",
+        "uri": "https://discord.gg/aHrZJuEKZG"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter/X",
+        "uri": "https://x.com/PREEB_Pool"
+      }
+    ]
+  }
+}
